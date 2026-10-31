@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaalam Watch Works | Watch repair, recent job register</title>
+<meta name="description" content="Kaalam Watch Works, watch repair since 1987. Recent job register: mechanical and quartz repairs, strap and battery changes, glass replacement.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #e7ead9;
+    --paper-line: #c9cfb4;
+    --ink: #1c2750;
+    --ink-soft: #4a5378;
+    --stamp: #a52a1f;
+    --brass: #8c6d1f;
+    --row-hover: #dde2c8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1d2118;
+      --paper-line: #353b2b;
+      --ink: #dfe4f7;
+      --ink-soft: #a3acd0;
+      --stamp: #e0705f;
+      --brass: #d4b25a;
+      --row-hover: #262b1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Mukta", "Noto Sans Tamil", system-ui, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    /* ledger ruling */
+    background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, var(--paper-line) 31px, var(--paper-line) 32px);
+  }
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+
+  header { border-bottom: 3px double var(--ink); padding-bottom: 1.25rem; margin-bottom: 2rem; background: var(--paper); }
+  .shop-name {
+    font-family: "Yatra One", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.4rem, 8vw, 4.6rem);
+    line-height: 1.05;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+  .tag { margin: 0.4rem 0 0; color: var(--ink-soft); }
+  .tag b { color: var(--brass); font-weight: 600; }
+
+  .intro { max-width: 40rem; background: var(--paper); padding: 0.25rem 0; }
+  h2 { font-family: "Yatra One", Georgia, serif; font-weight: 400; font-size: 1.6rem; margin: 2.25rem 0 0.25rem; background: var(--paper); display: inline-block; padding-right: 0.5rem; }
+  .note { color: var(--ink-soft); margin: 0 0 1rem; background: var(--paper); display: inline-block; }
+
+  .register { width: 100%; border-collapse: collapse; background: var(--paper); border: 1.5px solid var(--ink); }
+  .register caption { text-align: left; padding: 0.5rem 0; color: var(--ink-soft); font-size: 0.95rem; caption-side: bottom; }
+  .register th, .register td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--paper-line); }
+  .register thead th { border-bottom: 1.5px solid var(--ink); font-weight: 600; background: var(--paper); }
+  .register tbody tr:hover { background: var(--row-hover); }
+  .ord { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+  .date { white-space: nowrap; color: var(--ink-soft); }
+  .status {
+    display: inline-block; border: 1.5px solid var(--stamp); color: var(--stamp);
+    padding: 0 0.45rem; border-radius: 2px; font-size: 0.9rem; font-weight: 600; white-space: nowrap;
+    transform: rotate(-2deg);
+  }
+  .status.ready { border-color: var(--brass); color: var(--brass); }
+  .status.declined { border-style: dashed; }
+
+  .hours { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+  .hours div { background: var(--paper); border-left: 3px solid var(--brass); padding: 0.25rem 0 0.25rem 0.9rem; }
+  .hours h3 { margin: 0; font-size: 1.05rem; }
+  .hours p { margin: 0; color: var(--ink-soft); }
+
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--ink-soft); font-size: 0.9rem; color: var(--ink-soft); background: var(--paper); }
+
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--brass); outline-offset: 2px; }
+
+  @media (max-width: 42rem) {
+    .register thead { position: absolute; left: -9999px; }
+    .register, .register tbody, .register tr, .register td { display: block; width: 100%; }
+    .register tr { border-bottom: 1.5px solid var(--ink); padding: 0.5rem 0; }
+    .register td { border: 0; padding: 0.15rem 0.75rem; }
+    .register td::before { content: attr(data-label) ": "; font-weight: 600; color: var(--ink-soft); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1 class="shop-name">Kaalam Watch Works</h1>
+    <p class="tag">Mechanical and quartz repairs. <b>Est. 1987.</b> Straps, batteries, glass and movements.</p>
+  </header>
+
+  <section class="intro">
+    <p>Three generations at the same bench. Bring in anything that ticks, stops, runs fast or runs slow. We open it, look, and tell you the truth before we touch it.</p>
+  </section>
+
+  <h2>Recent job register</h2>
+  <p class="note">Jobs from the last fortnight. Customers asked us to keep their entries up so they can quote the order number at pickup.</p>
+
+  <table class="register">
+    <caption>Register extract, July 2018. Older entries are kept in the shop books.</caption>
+    <thead>
+      <tr>
+        <th scope="col">Order no.</th>
+        <th scope="col">Date</th>
+        <th scope="col">Customer</th>
+        <th scope="col">Watch</th>
+        <th scope="col">Work and notes</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="ord" data-label="Order no.">0296</td>
+        <td class="date" data-label="Date">02 Jul</td>
+        <td data-label="Customer">Arun</td>
+        <td data-label="Watch">Titan quartz, steel strap</td>
+        <td data-label="Work and notes">Battery changed. Strap links shortened by two.</td>
+        <td data-label="Status"><span class="status">Delivered</span></td>
+      </tr>
+      <tr>
+        <td class="ord" data-label="Order no.">0297</td>
+        <td class="date" data-label="Date">03 Jul</td>
+        <td data-label="Customer">Meena</td>
+        <td data-label="Watch">HMT hand-wound, 1970s</td>
+        <td data-label="Work and notes">Mainspring replaced. Cleaned and oiled. Keeps good time.</td>
+        <td data-label="Status"><span class="status">Delivered</span></td>
+      </tr>
+      <tr>
+        <td class="ord" data-label="Order no.">0298</td>
+        <td class="date" data-label="Date">04 Jul</td>
+        <td data-label="Customer">Piyaar</td>
+        <td data-label="Watch">Gold-plated dress watch</td>
+        <td data-label="Work and notes">Asked us to make it "last forever". We do not do that. Quoted for a new crown only. Did not return.</td>
+        <td data-label="Status"><span class="status declined">Not collected</span></td>
+      </tr>
+      <tr>
+        <td class="ord" data-label="Order no.">0299</td>
+        <td class="date" data-label="Date">06 Jul</td>
+        <td data-label="Customer">Karthik</td>
+        <td data-label="Watch">Casio digital</td>
+        <td data-label="Work and notes">Water damage. Board dried, contacts cleaned. Backlight still weak.</td>
+        <td data-label="Status"><span class="status ready">Ready</span></td>
+      </tr>
+      <tr>
+        <td class="ord" data-label="Order no.">0300</td>
+        <td class="date" data-label="Date">07 Jul</td>
+        <td data-label="Customer">Shiva</td>
+        <td data-label="Watch">Unmarked case, no brand on dial</td>
+        <td data-label="Work and notes">Hands run backwards and the date wheel will not settle on a year. Customer says he needs it by evening because he has a dance-off to get to. Crown reset, hands re-seated, case back sealed. Customer paid in cash and left in a hurry.</td>
+        <td data-label="Status"><span class="status">Delivered</span></td>
+      </tr>
+      <tr>
+        <td class="ord" data-label="Order no.">0301</td>
+        <td class="date" data-label="Date">09 Jul</td>
+        <td data-label="Customer">Gayathri</td>
+        <td data-label="Watch">Fastrack, ladies</td>
+        <td data-label="Work and notes">Cracked glass replaced. Gasket renewed.</td>
+        <td data-label="Status"><span class="status">Delivered</span></td>
+      </tr>
+      <tr>
+        <td class="ord" data-label="Order no.">0302</td>
+        <td class="date" data-label="Date">10 Jul</td>
+        <td data-label="Customer">Shivam</td>
+        <td data-label="Watch">Fossil chronograph</td>
+        <td data-label="Work and notes">Sub-dial hand stuck at 6. Movement serviced. Customer says the film opens this week and he is "very excited".</td>
+        <td data-label="Status"><span class="status ready">Ready</span></td>
+      </tr>
+      <tr>
+        <td class="ord" data-label="Order no.">0303</td>
+        <td class="date" data-label="Date">11 Jul</td>
+        <td data-label="Customer">Bharathi</td>
+        <td data-label="Watch">Sonata, leather strap</td>
+        <td data-label="Work and notes">Strap replaced. Spring bars renewed.</td>
+        <td data-label="Status"><span class="status">Delivered</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Visit the bench</h2>
+  <div class="hours">
+    <div>
+      <h3>Opening hours</h3>
+      <p>Monday to Saturday, morning to evening. Closed on Sundays.</p>
+    </div>
+    <div>
+      <h3>Estimates</h3>
+      <p>Free for quartz watches. Mechanical estimates are free if you go ahead with the repair.</p>
+    </div>
+    <div>
+      <h3>Collecting your watch</h3>
+      <p>Quote your order number from the register. No number, no watch.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Kaalam Watch Works is a fictional business created for a capture-the-flag exercise. All names, entries and order numbers are invented. Film references are for fun and are not endorsed by anyone connected with the film.</p>
+  </footer>
+
+</div>
+</body>
+</html>
